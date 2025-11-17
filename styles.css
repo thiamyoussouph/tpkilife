@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ 
+.menue{
+ 
+    display: flex;
+    justify-content: space-around;
+    background-color: #dab251;
+     align-items: center;
+   
+   z-index: 1;
+ 
+
+}
+
+.menue ul{
+    display: flex;
+  
+
+    
+}
+.menue ul li{
+   padding: 12px;
+   list-style: none;
+   color: white;
+   cursor: pointer;
+   border-radius: 12%;
+   font-weight: bold;
+   
+
+
+}
+.menue ul li:hover{
+    background-color: #000000;
+    color: #dab251;
+    
+    
+}
+.bagniere{
+    background-image: url("images/bagniere3.jpg");
+    width: 100%;
+    height: 100vh;
+
+    object-fit: cover;
+     background-size: cover;
+    
+
+
+   
+
+   
+}
+.bagniere marquee p{
+    color: white;
+    font-size: 2em;
+    margin-top: 17%;
+    text-align: center;
+  
+
+}
+.bagniere marquee span{
+    color:#dab251; 
+    font-size: 2.3rem;
+  
+    
+}
+.services  h2{
+    text-align: center;
+   margin :23px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   
+}
+.ligne{
+    width: 3%;
+    height: 3px;
+    background-color: #dab251;
+    margin: 0 auto 40px auto;
+    border-radius: 12px;
+    margin-top: -20px;
+    margin-left: 50%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 18rem;
+   
+    background-color: #dab251;
+    border-radius: 12px;
+    padding-bottom: 0 auto;
+  
+}
+.card img{
+    width: 100%;
+    height: auto; /* Pas de hauteur fixe */
+    max-height: 17rem;
+    object-fit: fill;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 0;
+    margin: 0;
+   
+}
+.card p,h3{
+    text-align: center;
+    padding: 10px;
+}
+.card button{
+
+margin: 20px;
+margin-left: 60%;
+padding: 10px 16px;
+border-radius: 8px;
+border: none;
+font-weight: bold;
+cursor: pointer;
+
+
+}
+.card button:hover{
+    background-color:#171716;
+    color: white;
+}
+.reserver{
+    background-color: #dab251;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+margin-left: 60%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+.contacte {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    height: 30VH;
+    background-color: #dab251;
+    border-radius: 12px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    margin-bottom: 5%;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: grid; /* CHANGÉ de flex à grid */
+    grid-template-columns: 400px 1fr; /* AJOUTÉ: colonne fixe pour les labels */
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-item strong {
+    color: #333;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left; /* AJOUTÉ */
+}
+
+.contact-item span {
+    color: #666;
+    font-size: 50px;
+    text-align: left; /* AJOUTÉ */
+}
+
+.contacte img {
+    width: 300px;
+    height: 200px;
+    margin-right: 2%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.contacte img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .contacte {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-item {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+        gap: 0.5rem;
+    }
+    
+    .contact-item strong {
+        font-size: 30px;
+    }
+    
+    .contact-item span {
+        font-size: 30px;
+    }
+    
+    .contacte img {
+        width: 100%;
+      
+    }
+}

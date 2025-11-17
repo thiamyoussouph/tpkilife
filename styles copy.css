@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+.menue{
+ 
+    display: flex;
+    justify-content: space-around;
+    background-color: #dab251;
+     align-items: center;
+   
+   
+
+}
+
+.menue ul{
+    display: flex;
+  
+
+    
+}
+.menue ul li{
+   padding: 12px;
+   list-style: none;
+   color: white;
+   cursor: pointer;
+   border-radius: 12%;
+   font-weight: bold;
+   
+
+
+}
+.menue ul li:hover{
+    background-color: #000000;
+    color: #dab251;
+    
+    
+}
+.bagniere{
+    background-image: url("images/bagniere3.jpg");
+    width: 100%;
+    height: 100vh;
+
+    object-fit: cover;
+     background-size: cover;
+    
+
+
+   
+
+   
+}
+.bagniere marquee p{
+    color: white;
+    font-size: 2em;
+    margin-top: 17%;
+    text-align: center;
+  
+
+}
+.bagniere marquee span{
+    color:#dab251; 
+    font-size: 2.3rem;
+  
+}
+.div1{
+    background-color: seagreen;
+   margin: 90px;
+  
+}
+/* .span2{
+   background-color: sandybrown;
+   padding: 29px;
+} */
+.spangauche{
+    background-color: coral;
+}
+.spancenter{
+    background-color: lightblue;
+    padding: 5px;
+}
+.spandroite{
+    background-color: lightgreen;
+    padding: 20px 15px 15px 15px ;
+   margin-left: 15%;
+}
